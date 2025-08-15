@@ -1,0 +1,13 @@
+<div>
+  <button class="btn btn-success" routerLink="add">Add Room</button>
+</div>
+
+<div>
+  <input type="number" class="form-control" placeholder="Price" [formControl]="priceFilter">
+</div>
+
+<hinv-rooms-list [rooms]="roomList" [title]="title" [price]="priceFilter.value" (selectedRoom)="selectRoom($event)"></hinv-rooms-list>
+<hr>
+
+
+<router-outlet></router-outlet>

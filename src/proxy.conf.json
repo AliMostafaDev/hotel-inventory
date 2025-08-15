@@ -1,0 +1,7 @@
+{
+  "/api": {
+    "target": "http://testing4.local:8080",
+    "secure": false,
+     "changeOrigin": true
+  }
+}
